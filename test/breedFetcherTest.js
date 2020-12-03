@@ -19,7 +19,7 @@ describe('fetchBreedDescription', () => {
 
   it('return error when a valid/non-existent breed is passed in.', (done) => {
     fetchBreedDescription('', (err, desc) => {
-      assert.equal(desc, undefined);
+      assert.equal(desc, null);
       done();
     });
   });

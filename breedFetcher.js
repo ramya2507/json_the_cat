@@ -8,7 +8,7 @@ const fetchBreedDescription = function(breedName, callback) {
     try {
       callback(error, data[0].description);
     } catch (err) {
-      callback(err);
+      callback(err,null);
     }
     
   });
